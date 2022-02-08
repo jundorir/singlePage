@@ -1,0 +1,193 @@
+.contain {
+  // width: 750px;
+  height: 100vh;
+  background-color: #000000;
+  .apply {
+    width: 100%;
+    height: 100vh;
+    background: url("~@assets/images/apply/apply_bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    color: #ffffff;
+    // &.applyPC{
+    //   width: 100%;
+    //   height: 100%;
+    //   background: url("~@assets/images/apply/apply_bg.png");
+    //   background-size: cover;
+    // }
+    .applyWord {
+      width: 537px;
+      height: 197px;
+      background: url("~@assets/images/apply/apply_word.png") no-repeat;
+      background-size: contain;
+      margin: auto;
+    }
+    .applyTitle {
+      width: 344px;
+      height: 64px;
+      background: url("~@assets/images/apply/apply_input.png") no-repeat;
+      background-size: contain;
+      margin: auto;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .applyBox {
+      width: 675px;
+      height: 816px;
+      box-sizing: border-box;
+      background: url("~@assets/images/apply/apply_box.png") no-repeat;
+      background-size: contain;
+      margin: 40px 0;
+      padding: 70px 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .header {
+        height: 25%;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .now {
+          opacity: 0.5;
+        }
+        .address {
+          font-size: 23px;
+          color: #f1ae3a;
+          margin-top: 20px;
+          word-break: break-all;
+        }
+        .contentUp {
+          width: 584px;
+          height: 22px;
+          background: url("~@assets/images/apply/apply_up.png");
+          background-size: contain;
+          margin-top: 30px;
+        }
+      }
+      .content {
+        width: 90%;
+        flex: auto;
+        overflow: auto;
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: #d1cccc;
+          -webkit-border-radius: 2em;
+          -moz-border-radius: 2em;
+          border-radius: 2em;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #575757;
+        }
+        .title {
+          text-align: center;
+          font-size: 24px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        .word {
+          font-size: 24px;
+          color: #ffffff;
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 35%;
+        margin-top: 30px;
+        font-size: 24px;
+        color: #ffffff60;
+        margin-bottom: 40px;
+        .contentDown {
+          width: 584px;
+          height: 22px;
+          background: url("~@assets/images/apply/apply_down.png");
+          background-size: 584px 22px;
+        }
+        .buttonBox {
+          width: 80%;
+          display: flex;
+          justify-content: center;
+        }
+        .button {
+          width: 214px;
+          height: 82px;
+          background: url("~@assets/images/apply/apply_button.png") no-repeat;
+          background-size: 214px 82px;
+          margin-top: 30px;
+          font-weight: bold;
+          color: #fff04a;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &.buttonLeft {
+            margin-right: 20px;
+          }
+          &.disabled {
+            background: url("~@assets/images/apply/button_disabled.png")
+              no-repeat;
+            background-size: 214px 82px;
+          }
+          &.no {
+            display: none;
+          }
+        }
+        .need,
+        .balance {
+          margin-top: 20px;
+          .needNum {
+            color: #f1ae3a;
+            .depreciate{
+              color: #ffffff50;
+              margin-right: 20px;
+              font-weight: 600;
+              text-decoration: line-through;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .apply {
+      background: url("~@assets/images/apply/big_bg.png");
+      background-size: cover;
+    }
+  }
+}
+.name {
+  width: 402px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  height: 66px;
+  background: url(~@assets/images/input_bg.png) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  input {
+    width: 250px;
+    text-indent: 1em;
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.8);
+    flex: 1;
+    display: inline-block;
+    background: none;
+    border: none;
+    outline: none;
+  }
+}

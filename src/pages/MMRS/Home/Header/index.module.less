@@ -1,0 +1,83 @@
+.contain {
+  background-image: url('~@assets/images/DAO/directorIMG.png');
+  background-size: 750px 492px;
+  width: 750px;
+  height: 492px;
+  overflow: hidden;
+  margin-top: -60px;
+  position: relative;
+  .inner {
+    width: 100%;
+    margin: 0 50px;
+    margin-top: 182px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .left {
+      position: relative;
+      .title {
+        height: 40px;
+        font-size: 52px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 40px;
+        margin-bottom: 20px;
+      }
+      .info {
+        font-size: 26px;
+        font-weight: 400;
+        color: #f9f9f9;
+        margin-bottom: 40px;
+        margin-top: 20px;
+      }
+      .describle {
+        font-size: 26px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        width: 570px;
+        color: #ffffff;
+        line-height: 60px;
+        background: #f8f4f440;
+        height: 60px;
+        border-radius: 30px;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .address {
+        }
+        .copy {
+          width: 30px;
+          height: 30px;
+          background: url('~@assets/images/DAO/copy.png');
+          background-size: cover;
+        }
+      }
+      .connect {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 28px;
+        width: 200px;
+        height: 60px;
+        background: #ffffff;
+        border-radius: 30px;
+        color: #3a3aff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        &.none {
+          display: none;
+        }
+      }
+    }
+    .right {
+      .rightImg {
+        width: 208px;
+        height: 114px;
+      }
+    }
+  }
+}

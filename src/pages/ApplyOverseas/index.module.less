@@ -1,0 +1,237 @@
+.contain {
+  height: 100vh;
+  background-color: #e42128;
+  .apply {
+    width: 100%;
+    height: 100vh;
+    // background: url("~@assets/images/apply/apply_bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: -40px;
+    // position: fixed;
+    // z-index: 999;
+    // &.applyPC{
+    //   width: 100%;
+    //   height: 100%;
+    //   background: url("~@assets/images/apply/apply_bg.png");
+    //   background-size: cover;
+    // }
+    .applyWord {
+      width: 537px;
+      height: 197px;
+      background: url("~@assets/images/apply/apply_word.png") no-repeat;
+      background-size: contain;
+      margin: auto;
+    }
+    .applyTitle {
+      // width: 344px;
+      // height: 64px;
+      // background: url("~@assets/images/apply/apply_input.png") no-repeat;
+      // background-size: contain;
+      margin: 0 auto;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      // font-weight: 600;
+      color: #ffd801;
+      // -webkit-text-stroke: 2px #e10029;
+      // text-stroke: 2px #e10029;
+    }
+    .applyBox {
+      width: 595px;
+      height: 750px;
+      min-height: 750px;
+      box-sizing: border-box;
+      background: url("~@assets/images/apply/christmas_box.png") no-repeat;
+      background-size: 595px 750px;
+      // margin: 40px 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      // margin-bottom: 60px;
+      .hat {
+        width: 174px;
+        height: 166px;
+        background: url("~@assets/images/apply/christmas_hat.png") no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: -56px;
+        top: -34px;
+      }
+      .header {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .now {
+          opacity: 0.5;
+        }
+        .address {
+          font-size: 20px;
+          color: #f1ae3a;
+          margin: 10px 0;
+          word-break: break-all;
+          .link {
+            width: 120px;
+            height: 24px;
+            text-align: center;
+            // background-color: #2159a1;
+            position: relative;
+            .linkMask {
+              width: 140px;
+              height: 24px;
+              // background-color: #b0da64;
+              position: absolute;
+              top: 0;
+              z-index: 99;
+            }
+          }
+        }
+        .contentUp {
+          width: 500px;
+          height: 22px;
+          background: url("~@assets/images/apply/apply_up.png");
+          background-size: 500px 22px;
+          // margin-top: 30px;
+        }
+      }
+      .content {
+        // width: 90%;
+        flex: auto;
+        overflow: auto;
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: #242424;
+          -webkit-border-radius: 2em;
+          -moz-border-radius: 2em;
+          border-radius: 2em;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #575757;
+        }
+        .word {
+          font-size: 18px;
+          color: #ffffff;
+          &.wordTitle {
+            text-align: center;
+            margin-bottom: 12px;
+          }
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 40%;
+        margin-top: 30px;
+        font-size: 24px;
+        color: #ffffff60;
+        .contentDown {
+          width: 500px;
+          height: 22px;
+          background: url("~@assets/images/apply/apply_down.png");
+          background-size: 500px 22px;
+        }
+        .buttonBox {
+          // width: 80%;
+          display: flex;
+          justify-content: center;
+        }
+        .button {
+          width: 214px;
+          height: 82px;
+          background: url("~@assets/images/apply/apply_button.png") no-repeat;
+          background-size: 214px 82px;
+          margin-top: 30px;
+          font-weight: bold;
+          color: #fff04a;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          // margin-left: 20px;
+          &.buttonLeft {
+            margin-right: 20px;
+          }
+          &.disabled {
+            background: url("~@assets/images/apply/button_disabled.png")
+              no-repeat;
+            background-size: 214px 82px;
+          }
+          &.no {
+            display: none;
+          }
+          .approve,
+          .apply {
+            width: 100%;
+            height: 100%;
+            // background-color: #ffd801;
+            position: absolute;
+            z-index: 99;
+          }
+        }
+        .need,
+        .balance {
+          margin-top: 20px;
+          .needNum {
+            color: #f1ae3a;
+          }
+        }
+      }
+    }
+  }
+  .christmasTop {
+    width: 100%;
+    height: 347px;
+    background: url("~@assets/images/apply/christmas_top.png");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    &.christmasTopPC {
+      width: 100vw;
+      height: 602px;
+      background: url("~@assets/images/apply/christmas_bigtop.png");
+      background-size: 100vw 602px;
+    }
+  }
+  .christmasBottm {
+    width: 100%;
+    height: 311px;
+    background: url("~@assets/images/apply/christmas_bottom.png");
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    &.christmasBottmPC {
+      width: 100vw;
+      height: 564px;
+      background: url("~@assets/images/apply/christmas_bigbottom.png");
+      background-size: 100vw 564px;
+    }
+  }
+  // @media screen and (min-width: 1200px) {
+  //   .apply {
+  //     background: url("~@assets/images/apply/big_bg.png");
+  //     background-size: cover;
+  //   }
+  // }
+  &.containPC {
+    padding-bottom: 120px;
+    padding-top: 60px;
+  }
+}
